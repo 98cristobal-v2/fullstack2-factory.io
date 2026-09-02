@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto | factory.io</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-  <header class="encabezado">
-    <nav class="barra-navegacion">
-      <a href="index.html" class="logo">⚡ factory.io</a>
-      <ul class="menu-principal">
+  <!-- Encabezado y Navegación -->
+  <header>
+    <nav>
+      <a href="index.html">⚡ factory.io</a>
+      <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="blogs.html">Blog</a></li>
-        <li><a href="contacto.html" class="activo">Contacto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
-      <div class="acciones-usuario">
-        <a href="carrito.html">🛍️ Carrito</a>
-        <a href="login.html">Ingresar</a>
-        <a href="registro.html" class="boton">Registrarse</a>
-      </div>
+      <a href="carrito.html">🛍️ Carrito</a>
+      <a href="login.html">Ingresar</a>
+      <a href="registro.html">Registrarse</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Contacto</h1>
-    <p>Escríbenos si necesitas ayuda o tienes dudas sobre tus productos.</p>
-  </section>
+  <!-- Contenido Principal -->
+  <main>
 
-  <section class="seccion contenedor">
-    <h2 class="titulo-seccion">Formulario de contacto</h2>
-    <form>
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" />
+    <section>
+      <h1>Contacto y Soporte</h1>
+      <p>Escríbenos si necesitas ayuda o tienes dudas sobre tus productos.</p>
+    </section>
 
-      <label for="correo">Correo electrónico</label>
-      <input type="email" id="correo" name="correo" />
+    <!-- Información de Servicio Técnico -->
+    <section>
+      <h2>Atención de Servicio Técnico</h2>
+      <p>Nuestros técnicos especialistas responden consultas sobre compatibilidad de componentes, fuentes de poder y armado de computadores.</p>
+      <p>Envíanos un mensaje y te responderemos al correo electrónico.</p>
+    </section>
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje"></textarea>
+    <!-- Formulario de contacto SIN etiqueta <form> -->
+    <section>
+      <h2>Formulario de contacto</h2>
 
-      <button type="submit" class="boton">Enviar</button>
-    </form>
-  </section>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
 
-  <footer class="pie-pagina">
+      <label for="correo">Correo electrónico:</label>
+      <input type="text" id="correo">
+
+      <label for="texto-mensaje">Mensaje:</label>
+      <textarea id="texto-mensaje"></textarea>
+
+      <!-- Botón con evento onclick a la función de JS -->
+      <button type="button" onclick="validarContacto()">Enviar</button>
+
+      <!-- Párrafo para mostrar respuesta -->
+      <p id="mensaje"></p>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
     <p>&copy; 2026 factory.io - Todos los derechos reservados</p>
     <p><a href="nosotros.html">Sobre nosotros</a> | <a href="contacto.html">Contacto</a></p>
   </footer>
 
+  <!-- Script JS para la validación -->
   <script src="js/validaciones.js"></script>
 </body>
 </html>

@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | factory.io</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-  <header class="encabezado">
-    <nav class="barra-navegacion">
-      <a href="index.html" class="logo">⚡ factory.io</a>
-      <ul class="menu-principal">
+  <!-- Encabezado y Navegación -->
+  <header>
+    <nav>
+      <a href="index.html">⚡ factory.io</a>
+      <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="blogs.html">Blog</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-      <div class="acciones-usuario">
-        <a href="carrito.html">🛍️ Carrito</a>
-        <a href="login.html" class="activo">Ingresar</a>
-        <a href="registro.html" class="boton">Registrarse</a>
-      </div>
+      <a href="carrito.html">🛍️ Carrito</a>
+      <a href="login.html">Ingresar</a>
+      <a href="registro.html">Registrarse</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Ingresar</h1>
-    <p>Accede con tu correo y contraseña para continuar.</p>
-  </section>
+  <!-- Contenido Principal -->
+  <main>
 
-  <section class="seccion contenedor">
-    <h2 class="titulo-seccion">Formulario de ingreso</h2>
-    <form>
-      <label for="correo">Correo electrónico</label>
-      <input type="email" id="correo" name="correo" />
+    <section>
+      <h1>Ingresar</h1>
+      <p>Accede con tu correo y contraseña para continuar.</p>
+    </section>
 
-      <label for="clave">Contraseña</label>
-      <input type="password" id="clave" name="clave" />
+    <!-- Sección de ingreso SIN etiqueta <form> -->
+    <section>
+      <h2>Formulario de ingreso</h2>
+      
+      <label for="correo">Correo electrónico:</label>
+      <input type="text" id="correo">
 
-      <button type="submit" class="boton">Ingresar</button>
-    </form>
-  </section>
+      <label for="clave">Contraseña:</label>
+      <input type="password" id="clave">
 
-  <footer class="pie-pagina">
+      <!-- Botón con evento onclick directo a JavaScript -->
+      <button type="button" onclick="validarLogin()">Ingresar</button>
+
+      <!-- Párrafo para mostrar el mensaje de validación -->
+      <p id="mensaje"></p>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
     <p>&copy; 2026 factory.io - Todos los derechos reservados</p>
     <p><a href="nosotros.html">Sobre nosotros</a> | <a href="contacto.html">Contacto</a></p>
   </footer>
 
+  <!-- Archivo de JavaScript -->
   <script src="js/validaciones.js"></script>
 </body>
 </html>

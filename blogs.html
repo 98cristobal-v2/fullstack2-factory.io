@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro | factory.io</title>
+  <title>Blog | factory.io</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -29,27 +29,32 @@
   <main>
 
     <section>
-      <h1>Crear cuenta</h1>
-      <p>Regístrate para comprar más rápido y guardar tus datos.</p>
+      <h1>Blog de Tecnología y Hardware</h1>
+      <p>Noticias, guías de armado y recomendaciones para tu setup.</p>
     </section>
 
+    <!-- Artículos del Blog -->
     <section>
-      <h2>Formulario de registro</h2>
-      
-      <label for="rut">RUT:</label>
-      <input type="text" id="rut">
+      <h2>Artículos Recientes</h2>
 
-      <label for="correo">Correo electrónico:</label>
-      <input type="text" id="correo">
+      <article>
+        <h3>Guía para elegir la fuente de poder adecuada</h3>
+        <p>Aprende a calcular el consumo en watts de tu tarjeta de video y procesador para evitar apogones por falta de energía.</p>
+        <a href="contacto.html">Consultar a un técnico</a>
+      </article>
 
-      <label for="clave">Contraseña:</label>
-      <input type="password" id="clave">
+      <article>
+        <h3>Mantenimiento preventivo para tu PC gamer</h3>
+        <p>Consejos esenciales sobre la limpieza de polvo y el cambio de pasta térmica para mantener bajas las temperaturas.</p>
+        <a href="contacto.html">Consultar a un técnico</a>
+      </article>
 
-      <!-- Botón que ejecuta la validación JS -->
-      <button type="button" onclick="validarRegistro()">Registrarse</button>
+      <article>
+        <h3>¿Qué evaluar al comprar una tarjeta gráfica?</h3>
+        <p>Revisamos la memoria VRAM, los conectores de energía y la compatibilidad con tu gabinete antes de actualizar.</p>
+        <a href="contacto.html">Consultar a un técnico</a>
+      </article>
 
-      <!-- Párrafo para desplegar mensajes de error/éxito -->
-      <p id="mensaje"></p>
     </section>
 
   </main>
@@ -60,7 +65,5 @@
     <p><a href="nosotros.html">Sobre nosotros</a> | <a href="contacto.html">Contacto</a></p>
   </footer>
 
-  <!-- Script JS -->
-  <script src="js/validaciones.js"></script>
 </body>
 </html>
