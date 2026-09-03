@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras | factory.io</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación -->
+  <header>
+    <nav>
+      <a href="index.html">⚡ factory.io</a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="carrito.html">🛍️ Carrito</a>
+      <a href="login.html">Ingresar</a>
+      <a href="registro.html">Registrarse</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+
+    <section>
+      <h1>Tu Carrito de Compras</h1>
+      <p>Revisa los productos seleccionados antes de finalizar tu pedido.</p>
+    </section>
+
+    <!-- Lista de Productos en el Carrito -->
+    <section>
+      <h2>Productos Seleccionados</h2>
+
+      <article>
+        <img src="img/cpu.jpg" alt="Procesador Intel">
+        <h3>Procesador Intel i5</h3>
+        <p>Cantidad: 1</p>
+        <p>Precio: $180.000</p>
+      </article>
+
+      <article>
+        <img src="img/ram.jpg" alt="Memoria RAM">
+        <h3>Memoria RAM 16GB</h3>
+        <p>Cantidad: 2</p>
+        <p>Precio: $90.000</p>
+      </article>
+    </section>
+
+    <!-- Resumen del Pedido -->
+    <section>
+      <h2>Resumen del Pedido</h2>
+      <p>Total Estimado: $270.000</p>
+      
+      <!-- Botón de acción directo con función en JS -->
+      <button type="button" onclick="validarCarrito()">Finalizar Compra</button>
+      <p id="mensaje"></p>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 factory.io - Todos los derechos reservados</p>
+    <p><a href="nosotros.html">Sobre nosotros</a> | <a href="contacto.html">Contacto</a></p>
+  </footer>
+
+  <!-- Script JS para la validación -->
+  <script src="js/validaciones.js"></script>
+</body>
+</html>

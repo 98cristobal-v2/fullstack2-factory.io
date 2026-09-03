@@ -117,3 +117,12 @@ function validarContacto() {
     document.getElementById("correo").value = "";
     document.getElementById("texto-mensaje").value = "";
 }
+// ==========================================================
+// VALIDACION DE CARRITO (carrito.html)
+// ==========================================================
+
+// Función que confirma el pedido del usuario en la vista del carrito
+function validarCarrito() {
+    // Muestra la confirmación de la compra en el elemento con id 'mensaje'
+    document.getElementById("mensaje").textContent = "¡Gracias por tu compra! Tu pedido esta en proceso.";
+}
