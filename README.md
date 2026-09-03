@@ -12,8 +12,8 @@
 
 ## 🛠️ Tecnologías Utilizadas
 * **HTML5:** Estructura 100% semántica para cada una de las vistas.
-* **CSS3:** Estilos globales mediante css/estilos.css con nombres de colores estándar en inglés (`whitesmoke`, `darkslategrey`, `royalblue`, `black`, `lightgray`) y distribución adaptable.
-* **JavaScript (Vanilla):** Validaciones de formularios en tiempo real (`js/validaciones.js`), manipulación del DOM mediante `document.getElementById()` y gestión de respuestas dinámicas.
+* **CSS3:** Estilos globales mediante css/estilos.css con nombres de colores estándar en inglés y distribución adaptable.
+* **JavaScript (Vanilla):** Validaciones de formularios en tiempo real (`js/validaciones.js`), y gestión de respuestas dinámicas.
 * **Git & GitHub:** Control de versiones con metodología de ramas y commits descriptivos de trabajo colaborativo.
 
 ---
@@ -68,10 +68,10 @@ fullstack2-factory.io/
 ## 🚀 Cómo Ejecutar el Proyecto
 
 1. **Clonar el repositorio:**
-   git clone https://github.com/98cristobal-v2/Full-Stack-ll.git
+   git clone https://github.com/98cristobal-v2/fullstack2-factory.io
 
 2. **Entrar a la carpeta del proyecto:**
-   cd Full-Stack-ll
+   cd fullstack2-factory.io
 
 3. **Ejecutar la aplicación:**
    Abre el archivo `index.html` directamente en tu navegador web o utiliza la extensión **Live Server** en Visual Studio Code.
