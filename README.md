@@ -38,9 +38,9 @@ fullstack2-factory.io/
 ├── productos.html          # Catálogo de hardware y accesorios
 ├── nosotros.html           # Información institucional y video embebido
 ├── blogs.html              # Artículos y notas técnicas
-├── contacto.html           # Formulario de soporte y servicio técnico
+├── contacto.html           # Soporte y servicio técnico
 ├── login.html              # Inicio de sesión
-├── registro.html           # Formulario de registro de usuarios
+├── registro.html           # Registro de usuarios
 └── carrito.html            # Vista del carrito de compras
 ```
 ---
