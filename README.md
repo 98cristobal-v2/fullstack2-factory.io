@@ -1,20 +1,81 @@
-# Proyecto Web factory.io - Evaluativa Parcial 1
+# ⚡ Proyecto Web factory.io - Evaluación Parcial 1
 
-## Instrucciones de Desarrollo
+¡Bienvenidos al repositorio oficial de **factory.io**! Este proyecto consiste en el desarrollo de un prototipo funcional de tienda en línea de hardware y componentes informáticos, aplicando estándares web de HTML5 semántico, CSS3 nativo y JavaScript (Vanilla).
 
-crear la aplicación web cumpliendo estrictamente con los siguientes puntos de la pauta:
+---
+
+## 👥 Integrantes del Grupo
+* Cristóbal
+* Ricardo
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+* **HTML5:** Estructura 100% semántica para cada una de las vistas.
+* **CSS3:** Estilos globales mediante css/estilos.css con nombres de colores estándar en inglés (`whitesmoke`, `darkslategrey`, `royalblue`, `black`, `lightgray`) y distribución adaptable.
+* **JavaScript (Vanilla):** Validaciones de formularios en tiempo real (`js/validaciones.js`), manipulación del DOM mediante `document.getElementById()` y gestión de respuestas dinámicas.
+* **Git & GitHub:** Control de versiones con metodología de ramas y commits descriptivos de trabajo colaborativo.
+
+---
+
+## 📂 Estructura del Proyecto
+
+fullstack2-factory.io/
+│
+├── css/
+│   └── estilos.css         # Hoja de estilos globales
+│
+├── js/
+│   └── validaciones.js     # Funciones y lógica de validación en JS
+│
+├── img/                    # Galería de imágenes locales de productos
+│   ├── cpu.jpg
+│   ├── gpu.jpg
+│   ├── ram.jpg
+│   └── ssd.jpg
+│   └── etc...
+├── index.html              # Página principal (Home)
+├── productos.html          # Catálogo de hardware y accesorios
+├── nosotros.html           # Información institucional y video embebido
+├── blogs.html              # Artículos y notas técnicas
+├── contacto.html           # Formulario de soporte y servicio técnico
+├── login.html              # Inicio de sesión
+├── registro.html           # Formulario de registro de usuarios
+└── carrito.html            # Vista del carrito de compras
+
+---
+
+## 📋 Cumplimiento de Pauta y Funcionalidades
 
 ### 1. Estructura HTML5 y CSS3
-- **HTML Semántico**: Utilizar etiquetas semánticas obligatorias (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-- **Navegación e Interconexión**: Menú `<nav>` fluido entre las páginas principales (`index.html`, `nosotros.html`, `registro.html`, `login.html`).
-- **Elementos Multimedia**: Incluir imágenes con etiqueta `<img>`, botones interactivos y un video embebido con `<iframe>` en `nosotros.html`.
-- **Estilos CSS Externos**: Usar un único archivo `css/estilos.css` vinculado a todos los HTML. Usar colores estándar (`blue`, `white`, `black`, `gray`, `lightgray`, `red`, `green`) y distribución Flexbox (`.barra-navegacion`, `.grilla-productos`).
+- [x] **HTML Semántico:** Uso estricto de etiquetas `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` y `<footer>`.
+- [x] **Navegación e Interconexión:** Menú de navegación `<nav>` fluido y sincronizado en todas las páginas del sitio.
+- [x] **Elementos Multimedia:** Integración de imágenes locales `<img>` para productos y video embebido `<iframe>` en `nosotros.html`.
+- [x] **Estilos CSS Externos:** Hoja única `css/estilos.css` vinculada globalmente, con nomenclatura de colores estándar nativos y reglas limpias por etiquetas.
 
 ### 2. Validaciones de Formularios en JS (`js/validaciones.js`)
-- Lógica simple en JavaScript nativo usando `document.getElementById` y `.addEventListener("click", ...)`.
-- Validar en los inputs que el RUT tenga largo entre 8 y 9 caracteres (`.length`) y que el correo contenga `@` (`.includes("@")`).
-- Mostrar mensajes de error o éxito específicos en un párrafo `<p id="msg-error"></p>` mediante `.textContent`.
-- Verificar la existencia de elementos con `if (document.getElementById("..."))` antes de asignar eventos para evitar errores en la consola.
+- [x] **Lógica Nativa:** Manejo directo de variables y eventos mediante `onclick` y llamadas a funciones nativas.
+- [x] **Validación de RUT:** Comprobación de longitud entre 8 y 9 caracteres (`.length`).
+- [x] **Validación de Correo:** Chequeo de campos vacíos, presencia de `@` y restricción de dominios permitidos (`@gmail.com`, `@duoc.cl`, `@profesor.cl`) utilizando `.endsWith()`.
+- [x] **Respuesta Visual:** Mensajes de error o confirmación desplegados dinámicamente en pantalla (`<p id="mensaje"></p>`) mediante `.textContent`.
+- [x] **Limpieza de Campos:** Reseteo automático de inputs tras completar cada envío exitoso.
 
 ### 3. Control de Versiones Git
-- Registrar los avances con commits descriptivos que reflejen el trabajo colaborativo en el repositorio.
+- [x] Registro de avances continuos en la rama `desarrollo-general-proyecto` con mensajes de commit normados para la posterior integración a la rama `main`.
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+1. **Clonar el repositorio:**
+   git clone https://github.com/98cristobal-v2/Full-Stack-ll.git
+
+2. **Entrar a la carpeta del proyecto:**
+   cd Full-Stack-ll
+
+3. **Ejecutar la aplicación:**
+   Abre el archivo `index.html` directamente en tu navegador web o utiliza la extensión **Live Server** en Visual Studio Code.
+
+---
+
+*Proyecto desarrollado para la asignatura de **Full-Stack II** — Duoc UC (2026).*
