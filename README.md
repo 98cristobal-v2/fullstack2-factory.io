@@ -19,7 +19,7 @@
 ---
 
 ## 📂 Estructura del Proyecto
-
+```
 fullstack2-factory.io/
 │
 ├── css/
@@ -42,7 +42,7 @@ fullstack2-factory.io/
 ├── login.html              # Inicio de sesión
 ├── registro.html           # Formulario de registro de usuarios
 └── carrito.html            # Vista del carrito de compras
-
+```
 ---
 
 ## 📋 Cumplimiento de Pauta y Funcionalidades
