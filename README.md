@@ -5,8 +5,8 @@
 ---
 
 ## 👥 Integrantes del Grupo
-* Cristóbal
-* Ricardo
+* Cristóbal Oñate
+* Ricardo Almarza
 
 ---
 
