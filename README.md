@@ -59,7 +59,7 @@ fullstack2-factory.io/
 - [x] **Validación de Correo:** Chequeo de campos vacíos, presencia de `@` y restricción de dominios permitidos (`@gmail.com`, `@duoc.cl`, `@profesor.cl`) utilizando `.endsWith()`.
 - [x] **Respuesta Visual:** Mensajes de error o confirmación desplegados dinámicamente en pantalla (`<p id="mensaje"></p>`) mediante `.textContent`.
 - [x] **Limpieza de Campos:** Reseteo automático de inputs tras completar cada envío exitoso.
-
+> ⚠️ **Nota:** Los botones "Ver detalle" en el catálogo de productos cuentan con enlaces definidos, pero la vista individual de detalle no se encuentra implementada en esta primera evaluación parcial.
 ### 3. Control de Versiones Git
 - [x] Registro de avances continuos en la rama `desarrollo-general-proyecto` con mensajes de commit normados para la posterior integración a la rama `main`.
 
